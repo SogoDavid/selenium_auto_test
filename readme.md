@@ -23,7 +23,7 @@ elif You want start tests on "ru" language(Firefox):
 elif You want start tests on "en" language(Firefox):
      $ pytest -s -v --browser_name=firefox --alluredir=allure_results
 
-elif:You want start tests by markers:
+elif You want start tests by markers:
      $ pytest -v -m "smoke or need_review" --alluredir=allure_results
 
 else:
