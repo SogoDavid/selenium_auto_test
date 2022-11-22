@@ -1,4 +1,4 @@
 allure_results
 .pytest_cache
 .idea
-.pytest_cache
+geckodriver.log

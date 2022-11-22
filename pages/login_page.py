@@ -1,3 +1,5 @@
+from time import sleep
+
 from .base_page import BasePage
 from .locators import LoginPageLocators
 
@@ -32,3 +34,4 @@ class LoginPage(BasePage):
         self.browser.find_element(*LoginPageLocators.INPUT_PASSWORD).send_keys(password)
         self.browser.find_element(*LoginPageLocators.INPUT_PASSWORD_ACCEPT).send_keys(password)
         self.browser.find_element(*LoginPageLocators.BUTTON_REGISTRATION).click()
+        sleep(2)
