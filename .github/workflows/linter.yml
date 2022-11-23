@@ -1,9 +1,9 @@
 name: Code-checks
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
   pull_request:
-    branches: [ master ]
+    branches: [ main ]
 
 jobs:
   build:
@@ -31,7 +31,7 @@ jobs:
       - name: Setting up Python
         uses: actions/setup-python@v2
         with:
-          python-version: '3.9'
+          python-version: 3.11
       - name: Installing package list
         run: apt list --installed
       - name: Removing previous chrome instances on runner
@@ -44,7 +44,6 @@ jobs:
         run: sudo apt-get install
       - name: Running the Python script
         run: python Selenium-Templat
-
 
 
 
