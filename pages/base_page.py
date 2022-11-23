@@ -3,6 +3,7 @@ from .locators import BasePageLocators
 from selenium.common.exceptions import NoSuchElementException, TimeoutException
 from selenium.webdriver.support.wait import WebDriverWait
 
+
 class BasePage:
     """Тесты и методы для всех страниц ресурса"""
     def __init__(self, browser, url, timeout=10):

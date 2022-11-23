@@ -6,6 +6,7 @@ import pytest
 
 """Тест-кейсы для главной страницы"""
 
+
 @pytest.mark.need_review
 class TestLoginFormMainPage:
     @allure.severity(allure.severity_level.NORMAL)
@@ -32,6 +33,7 @@ class TestLoginFormMainPage:
         page.open()
         page.should_be_login_link()
 
+
 @allure.severity(allure.severity_level.TRIVIAL)
 @pytest.mark.need_review
 @pytest.mark.regression
@@ -43,6 +45,7 @@ def test_word_login_present_in_url(browser):
     page = LoginPage(browser, link)
     page.open()
     page.should_be_login_url()
+
 
 @allure.severity(allure.severity_level.NORMAL)
 @pytest.mark.need_review
@@ -56,6 +59,7 @@ def test_should_present_login_form(browser):
     page.open()
     page.should_be_login_form()
 
+
 @allure.severity(allure.severity_level.NORMAL)
 @pytest.mark.need_review
 @pytest.mark.regression
@@ -67,6 +71,7 @@ def test_should_present_registration_form(browser):
     page = LoginPage(browser, link)
     page.open()
     page.should_be_register_form()
+
 
 @allure.severity(allure.severity_level.NORMAL)
 @pytest.mark.need_review
@@ -84,6 +89,7 @@ def test_guest_cant_see_product_in_basket_opened_from_main_page(browser):
     sec_page.should_not_be_product_add()
     sec_page.bascet_is_empty_text_is_present()
 
+
 @allure.severity(allure.severity_level.MINOR)
 @pytest.mark.need_review
 @pytest.mark.smoke
@@ -99,4 +105,3 @@ def test_guest_cant_see_product_in_basket_opened_from_product_page(browser):
     page.go_from_any_page_to_bascet_page()
     sec_page.should_not_be_product_add()
     sec_page.bascet_is_empty_text_is_present()
-

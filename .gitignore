@@ -2,3 +2,4 @@ allure_results
 .pytest_cache
 .idea
 geckodriver.log
+setup.cfg

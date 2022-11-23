@@ -1,8 +1,10 @@
 from selenium.webdriver.common.by import By
 
+
 class MainPageLocators:
     """Локаторы для глаавной страницы"""
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
+
 
 class LoginPageLocators:
     """Локаторы для страницы с авторизацией/регистрацией"""
@@ -15,6 +17,7 @@ class LoginPageLocators:
     INPUT_PASSWORD_ACCEPT = (By.CSS_SELECTOR, "#id_registration-password2")
     BUTTON_REGISTRATION = (By.CSS_SELECTOR, "[name='registration_submit']")
 
+
 class ProductPageLocators:
     """Локаторы для страницы с продуктами"""
 
@@ -26,6 +29,7 @@ class ProductPageLocators:
     MAIN_PRODUCT = (By.CSS_SELECTOR, ".product_main > h1")
     BUTTON_REPLACE_TO_BASCET = (By.CSS_SELECTOR, ".btn-info.btn-sm")
 
+
 class BascetPageLocators:
     """Локаторы для страницы с корзиной"""
 
@@ -33,6 +37,7 @@ class BascetPageLocators:
     FULL_PRICE_TO_BYE = (By.CSS_SELECTOR, ".col-sm-2 > .price_color.align-right")
     PRICE_TO_ONE_PRODUCT = (By.CSS_SELECTOR, ".col-sm-1 > .price_color.align-right")
     EMPTY_BASCET = (By.CSS_SELECTOR, "#content_inner>p")
+
 
 class BasePageLocators:
     """Общие локаторы для всех страниц"""

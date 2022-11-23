@@ -58,6 +58,3 @@ class ProductPage(BasePage):
 
         assert self.is_disappeared(*ProductPageLocators.INFO_ADD_PRODUCT), \
             "Элемент не исчезает"
-
-
-
